@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-4">
+                <div class="signup-form bg-white">
+                    <form action="">
+                        <div class="row">
+                            <div class="form-group col col-dv-left">
+                                <input type="text" class="form-control inp-all mb-3" placeholder="Họ" required>
+                            </div>
+                            <div class="form-group col col-dv-right">
+                                <input type="text" class="form-control inp-all mb-3" placeholder="Tên" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control inp-all mb-3" placeholder="Email hoặc số điện thoại" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control inp-all mb-3" placeholder="Mật khẩu" required>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-3 col-dv-left">
+                                <p>Ngày sinh</p>
+                            </div>
+                            <div class="form-group col-lg-9 col-dv-right">
+                            <input type="date" class="form-control inp-all mb-3" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-3 col-dv-left">
+                                <p>Ngày sinh</p>
+                            </div>
+                            <div class="form-group col-lg-9 col-dv-right">
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio" required>Nam
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="optradio" required>Nữ
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-success w-100 btn-all btn-signup">Đăng ký</button>
+                        <hr class="line">
+                        <div class="justify-content-center text-center">
+                            <button class="btn btn-info w-100 btn-login btn-all">Đăng nhập</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Import depedencies -->
+    <script src="../../libs/jquery/jquery-3.5.1.js"></script>
+    <script src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Jquery -->
+    <script>
+        $(document).ready(function () {
+            //get
+            $('.btn-primary').click(function () {
+                $('.alert').removeClass("disabled")
+            })
+        })
+    </script>
+
+</body>
+
+</html>
